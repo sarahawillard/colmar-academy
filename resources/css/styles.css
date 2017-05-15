@@ -1,0 +1,454 @@
+/* -- Universal Styles -- */
+
+html {
+  font-size: 16px;
+  color: #4a4a4a;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+}
+ 
+/*-- to format a new section, add "container" to the HTML main class and "display: flex;
+  justify-content: center;" to the corresponding CSS style. --*/
+
+.container {
+   margin: 0 auto;
+   max-width: 1444px;
+   width: 100%;
+}
+.nav-container {
+   margin: 0 auto;
+   max-width: 1575px;
+   /*background-color: blue;*/
+   width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25rem;
+  padding: 8px 0;
+}
+
+p {
+  font-size: 1rem;
+}
+
+#colmar {
+  font-weight: 600;
+}
+/* -- Fonts -- */
+
+/* maybe just download them and link them through your file system? a fonts folder in "resources" */
+/*  font-family: princeton_monticello,Georgia,sans-serif; */
+
+/* -- DESKTOP - Navigation Bar + Footer -- */
+
+header {
+  position: fixed;
+  border-bottom: solid 1px #d8d8d8;
+  z-index: 10;
+
+  width: 100%;
+  height: auto;
+  background-color: white;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+}
+footer {
+  border-top: solid 1px #d8d8d8;
+  padding-bottom: 30px;
+
+  width: 100%;
+  height: auto;
+  background-color: white;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+}
+.nav-container {
+  padding: 0px 20px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  color: #4a4a4a;
+}
+.logo {
+  flex: 1;
+  align-items: center;
+  display: flex;
+}
+.logo img {
+  margin-right: 10px;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  padding: 8px;
+}
+a {
+  vertical-align: bottom;
+  text-decoration: none;
+  color: #4a4a4a;
+}
+.icon {
+  display: inline-flex;
+}
+header .mobile {
+  display: none;
+}
+
+/* -- MOBILE - Navigation Bar + Footer -- */
+
+@media only screen and (max-width: 470px) {
+  header {
+    height: 64px;
+  }
+  header .desktop {
+    display: none;
+  }
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+  header .content {
+    padding: .5rem 0;
+  }
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  header .mobile li {
+    padding: 0;
+  }
+}
+
+
+/* -- DESKTOP - Banner -- */
+
+#banner {
+  width: 100%;
+  height: auto;
+  background-color: #d8d8d8;
+  padding-top: 64px;
+  display: flex;
+  justify-content: center;
+}
+.banner-container {
+  display: inline-flex;
+}
+.banner-container img {
+  width: 91%;
+  height: auto;
+  padding: 32px 40px 32px 24px;
+}
+.banner-text {
+  align-items: left;
+  margin: auto 0;
+  padding-right: 80px;
+}
+#banner h1 {
+  margin-bottom: 10%;
+}
+#banner .banner-btn {
+  background-color: #4a4a4a;
+  color: #f4f4f4;
+  text-align: center;
+  padding: 8px 0;
+  margin-top: 10%;
+  font-weight: bold;
+}
+
+/* -- MOBILE - Banner -- */
+
+@media only screen and (max-width: 470px) {
+  .banner-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .banner-container img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .banner-text {
+    padding: 16px;
+  }
+  #banner .banner-btn {
+    margin-bottom: 32px;
+  }
+}
+
+/* -- Info - "It doesn't hurt to keep practicing..." -- */
+
+#info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#info .mobile {
+  display: none;
+}
+.info-container {
+  display: inline-flex;
+}
+.info-left-col {
+  width: 60%;
+  border-right: 1px solid #d8d8d8;
+}
+.info-left-col img {
+  height: auto;
+  padding: 32px 24px;
+  width: 89.5%;
+}
+.info-main-text {
+  padding-left: 24px;
+  padding-right: 60px;
+}
+.info-main-text h1 {
+  padding-bottom: 32px;
+}
+.info-main-text h3 {
+  padding-bottom: 3%;
+}
+.info-main-text p {
+  padding-bottom: 5%;
+}
+.info-right-col {
+  width: 40%;
+  margin: auto 0;
+  /*max-width: 423px;*/
+}
+.info-right-col img {
+  width: 80%;
+  height: auto;
+  padding: 16px;
+}
+.info-box-container {
+  width: 100%;
+  display: flex;
+}
+.info-box-2 {
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+.info-text {
+  margin: auto 0;
+  display: block;
+  width: 70%;
+}
+.info-box-txt {
+  padding: 5% 0;
+}
+.info-box-read_more {
+  color: #4487dd;
+}
+
+/* -- MOBILE - Info -- */
+
+@media only screen and (max-width: 470px) {
+  .info-left-col {
+    display: none;
+  }
+  #info .desktop {
+    display: none;
+  }
+  #info .mobile {
+    display: block;
+  }
+  .info-right-col {
+    width: 100%;
+  }
+  .info-right-col img {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+  .info-box-container {
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .info-box-2 {
+    border-top: 0px;
+    border-bottom: 0px;
+    margin: 8px 0;
+  }
+  .info-text {
+    padding-left: 15%;
+  }
+}
+/* -- DESKTOP - Subjects -- */
+
+#learning {
+  background-color: #d8d8d8;
+  display: flex;
+  justify-content: center;
+}
+#learning .mobile {
+  display: none;
+}
+
+.learning-container {
+  padding: 32px 0;
+  width: 100%;
+  height: auto;
+  /*background-color: lightblue;*/
+}
+.learning-container h1 {
+  color: #4a4a4a;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.learning-box-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.learning-box img {
+  width: 100%;
+  height: auto;
+}
+
+.learning-box {
+  width: 31.75%;
+  background-color: white;
+  margin-bottom: 30px;
+
+}
+
+.learning-box h1 {
+  /* match info-right-col styles */
+}
+
+.learning-box-text-container {
+  padding: 16px;
+}
+
+.learning-box-title {
+  padding: 8px 0;
+}
+
+.learning-box-text {
+  padding: 5% 0;
+}
+
+.learning-box-classes {
+  padding-bottom: 24px;
+}
+
+/* -- MOBILE- Subjects -- */
+
+@media only screen and (max-width: 470px) {
+
+#learning .desktop {
+  display: none;
+}
+
+#learning .mobile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.learning-box-mobile h2 {
+  width: 100%;
+  background-color: gray;
+  margin: 5px;
+}
+}
+
+/* -- Thesis Exhibit -- */
+
+#thesis {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.thesis-title {
+  color: #4a4a4a;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.thesis-container {
+  width: 100%;
+  height: auto;
+}
+
+.thesis-left-col {
+  width: 60%;
+}
+
+.thesis-left-col video {
+  height: auto;
+  padding: 0 16px 24px 24px;
+  width: 89.5%;
+}
+
+.thesis-main-text {
+  padding-left: 24px;
+  padding-right: 60px;
+}
+
+.thesis-main-text h2 {
+  padding-bottom: 32px;
+}
+
+.thesis-main-text h3 {
+  font-size: 1.25rem;
+  padding-bottom: 3%;
+}
+
+.thesis-main-text p {
+  padding-bottom: 5%;
+}
+
+.thesis-right-col {
+  width: 40%;
+  /*max-width: 423px;*/
+}
+
+.thesis-right-col img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+.thesis-box-container {
+  width: 100%;
+  display: flex;
+}
+.thesis-box {
+  /*border: 1px solid #4a4a4a;*/
+}
+
+.thesis-text {
+  margin: auto 0;
+  display: block;
+  width: 70%;
+}
+
+.thesis-box-txt {
+  padding: 5% 0;
+}
+
+.thesis-box-read_more {
+  color: #4487dd;
+}
+
+.thesis-container-2 {
+  display: inline-flex;
+}
