@@ -75,6 +75,7 @@ p {
   font-weight: 700;
 }
 
+
 /* -- Fonts -- */
 
 /* maybe just download them and link them through your file system? a fonts folder in "resources" */
@@ -104,6 +105,9 @@ footer {
   display: flex;
   justify-content: center;
 }
+footer li {
+  background-color: blue;
+}
 .nav-container {
   padding: 0px 20px;
 }
@@ -132,7 +136,14 @@ nav li {
 
 nav a {
   color: #ac9766;
+  transition-timing-function: ease;
+  transition: color 1s ease 2s,
 }
+
+nav a:hover {
+  color: #62080a;
+}
+
 a {
   vertical-align: bottom;
   text-decoration: none;
@@ -145,9 +156,30 @@ header .mobile {
   display: none;
 }
 
+.searchbox {
+  height: 15px;
+  width: 120px;
+  border: 1px solid #ac9766;
+  border radius: 1px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  transition-timing-function: ease;
+  transition: height 200ms ease 0ms,
+  width 200ms ease 0ms,
+  margin-top 200ms ease 0ms,
+  margin-bottom 200ms ease 0ms;
+}
+
+.searchbox:hover {
+  height: 20px;
+  width: 180px;
+  margin-top: 6px;
+  margin-bottom: 3px;
+}
 /* -- QUERIES - Navigation Bar + Footer -- */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 880px) {
   header {
     height: 64px;
   }
@@ -212,16 +244,15 @@ header .mobile {
   margin-top: 10%;
   font-weight: bold;
   transition-timing-function: ease;
-  transition: background-color 20ms ease 20ms,
-  box-shadow 20ms ease 20ms,
+  transition: background-color 200ms ease 200ms,
+  box-shadow 200ms ease 200ms,
   padding 200ms ease 200ms,
   font-size 200ms ease 200ms;
 }
 #banner .banner-btn:hover {
-  background-color:	hsl(359, 85%, 19%);
-  box-shadow: 10px 10px 10px #888888;
-  padding: 40px 0;
-  font-size: 1.75rem;
+  box-shadow: 0px 0px 20px #888888;
+  padding: 35px 0;
+  font-size: 1.7rem;
 
 }
 
@@ -319,6 +350,9 @@ header .mobile {
 .info-main-text p {
   padding-bottom: 5%;
 }
+.info-main-text a {
+  color: #ac9766;
+}
 .info-right-col {
   width: 40%;
   margin: auto 0;
@@ -332,7 +366,15 @@ header .mobile {
 .info-box-container {
   width: 100%;
   display: flex;
+
+  transition-timing-function: ease-in-out;
+  transition: background-color 600ms ease 0ms;
 }
+
+.info-box-container:hover {
+  background-color: #d8d8d8;
+}
+
 .info-box-2 {
   border-top: 1px solid #d8d8d8;
   border-bottom: 1px solid #d8d8d8;
