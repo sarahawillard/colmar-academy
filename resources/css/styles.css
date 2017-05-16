@@ -168,7 +168,7 @@ header .mobile {
   transition: height 200ms ease 0ms,
   width 200ms ease 0ms,
   margin-top 200ms ease 0ms,
-  margin-bottom 200ms ease 0ms;
+  margin-bottom 200ms ease 0ms,
 }
 
 .searchbox:hover {
