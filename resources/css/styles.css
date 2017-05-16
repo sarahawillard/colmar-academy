@@ -1,4 +1,20 @@
-/* -- MOBILE query -- */
+/* -- Colors:
+
+Provided greys:
+
+  off white: #f4f4f4
+  light gray: #d8d8d8
+  dark gray: #4a4a4a
+
+Gartnet red:
+
+  lightest: #B3474A
+  light: #8A2124
+  true: #62080A
+  dark: #3E0002
+  darkest: #1F0001
+
+*/
 
 
 /* -- Universal Styles -- */
@@ -184,10 +200,10 @@ header .mobile {
   margin-bottom: 10%;
 }
 #banner .banner-btn {
-  background-color: #4a4a4a;
+  background-color:	hsl(359, 85%, 21%);
   color: #f4f4f4;
   text-align: center;
-  padding: 8px 0;
+  padding: 16px 0;
   margin-top: 10%;
   font-weight: bold;
 }
@@ -228,7 +244,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 485px) {
 
   .banner-container img {
     width: 100%;
@@ -238,7 +254,7 @@ header .mobile {
   .banner-text {
     padding: 16px;
   }
-  #banner .banner-btn {
+  .banner-btn {
     margin-bottom: 32px;
   }
   .banner-text {
@@ -363,7 +379,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 485px) {
   .info-left-col {
     display: none;
   }
@@ -424,7 +440,7 @@ header .mobile {
 }
 
 .learning-box-text {
-  padding: 5% 0;
+  padding: 10% 0 5% 0;
 }
 
 .learning-box-classes {
@@ -450,11 +466,11 @@ header .mobile {
   }
   .learning-box {
     width: 100%;
-    background-color: #f4f4f4;
+    background-color: #d8d8d8;
     margin-bottom: 8px;
   }
   .learning-box-title {
-    padding: 16px;
+    padding: 18px;
   }
   .learning-box-text-container {
     padding: 0px;
