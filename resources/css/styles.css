@@ -124,9 +124,14 @@ footer {
 }
 nav ul {
   display: flex;
+
 }
 nav li {
   padding: 8px;
+}
+
+nav a {
+  color: #ac9766;
 }
 a {
   vertical-align: bottom;
@@ -206,6 +211,18 @@ header .mobile {
   padding: 16px 0;
   margin-top: 10%;
   font-weight: bold;
+  transition-timing-function: ease;
+  transition: background-color 20ms ease 20ms,
+  box-shadow 20ms ease 20ms,
+  padding 200ms ease 200ms,
+  font-size 200ms ease 200ms;
+}
+#banner .banner-btn:hover {
+  background-color:	hsl(359, 85%, 19%);
+  box-shadow: 10px 10px 10px #888888;
+  padding: 40px 0;
+  font-size: 1.75rem;
+
 }
 
 /* -- QUERIES - Banner -- */
@@ -328,11 +345,17 @@ header .mobile {
   display: block;
   width: 70%;
 }
+.info-text span {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .info-box-txt {
   padding: 5% 0;
+  color: #ac9766;
 }
 .info-box-read_more {
-  color: #4487dd;
+  color: hsl(359, 85%, 21%);
 }
 
 /* -- QUERIES - Info -- */
