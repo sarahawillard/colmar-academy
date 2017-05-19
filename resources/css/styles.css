@@ -312,7 +312,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 790px) {
 
   .banner-container img {
     width: 100%;
@@ -334,7 +334,7 @@ header .mobile {
     margin: 2% 0 7% 0;
   }
   #banner h1 {
-    padding: 5% 0;
+    padding: 6% 0;
     margin-bottom: 0px;
   }
 }
