@@ -14,6 +14,10 @@ Gartnet red:
   dark: #3E0002
   darkest: #1F0001
 
+Supporting Tan:
+
+  beige, red hue: #ac9766
+
 */
 
 
@@ -105,8 +109,14 @@ footer {
   display: flex;
   justify-content: center;
 }
-footer li {
-  background-color: blue;
+footer .logo {
+ font-family: 'Lora', serif;
+ font-size: 1rem;
+ padding-top: 20px;
+}
+
+footer ul {
+  padding-top: 20px;
 }
 .nav-container {
   padding: 0px 20px;
@@ -282,17 +292,27 @@ header .mobile {
   }
   #banner .banner-btn {
     margin-bottom: 32px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
   }
   #banner h1 {
-    margin: 3% 0;
+    padding: 5% 0;
+    margin-bottom: 0px;
   }
   #banner .banner-btn {
     padding: 8px 0;
     margin-top: 5%;
+    padding-top: 35px;
+  }
+  #banner .banner-btn:hover {
+    box-shadow: 0;
+    padding: 35px 0 8px;
+    font-size: 1.25rem;
   }
 }
 
-@media only screen and (max-width: 485px) {
+@media only screen and (max-width: 768px) {
 
   .banner-container img {
     width: 100%;
@@ -311,7 +331,11 @@ header .mobile {
     align-items: center;
   }
   .banner-text h2 {
-    margin: 9% 0;
+    margin: 2% 0 7% 0;
+  }
+  #banner h1 {
+    padding: 5% 0;
+    margin-bottom: 0px;
   }
 }
 
@@ -396,9 +420,10 @@ header .mobile {
   padding: 5% 0;
   color: #ac9766;
 }
-.info-box-read_more {
+.info-box-read_more a {
   color: hsl(359, 85%, 21%);
 }
+
 
 /* -- QUERIES - Info -- */
 
@@ -444,7 +469,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 485px) {
+@media only screen and (max-width: 768px) {
   .info-left-col {
     display: none;
   }
@@ -502,19 +527,23 @@ header .mobile {
 
 .learning-box-title {
   padding: 8px 0;
+
 }
 
 .learning-box-text {
-  padding: 10% 0 5% 0;
+  padding: 10% 0 2% 0;
+  color: hsl(359, 85%, 21%);
 }
 
 .learning-box-classes {
   padding-bottom: 24px;
+  padding-left: 2%;
+  color: #ac9766;
 }
 
 /* -- QUERIES - Subjects -- */
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 768px) {
   #learning {
     background-color: #f4f4f4;
     border-top: 1px solid #d8d8d8;
@@ -534,11 +563,14 @@ header .mobile {
     background-color: #d8d8d8;
     margin-bottom: 8px;
   }
-  .learning-box-title {
+  .learning-box-text {
     padding: 18px;
   }
   .learning-box-text-container {
     padding: 0px;
+  }
+  .learning-box h4 {
+    padding: 26px 0 23px 23px;
   }
   .learning-box-container h2 {
     background-color: #d8d8d8;
@@ -599,8 +631,12 @@ header .mobile {
   display: flex;
 }
 .thesis-box {
-  /*border: 1px solid #4a4a4a;*/
-}
+    transition-timing-function: ease-in-out;
+    transition: background-color 600ms ease 0ms;
+  }
+  .thesis-box:hover {
+    background-color: hsl(0, 0%, 90%);
+  }
 .thesis-text {
   margin: auto 0;
   display: block;
@@ -610,7 +646,7 @@ header .mobile {
   padding: 5% 0;
 }
 .thesis-box-read_more {
-  color: #4487dd;
+  color: hsl(359, 85%, 21%);
 }
 .thesis-container-2 {
   display: inline-flex;
